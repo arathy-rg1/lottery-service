@@ -161,9 +161,9 @@ public class BallotControllerTest {
 	}
 
 	/**
-	 * Tests saveBallot API
+	 * Tests CreateBallot API
 	 * 
-	 * scenarios: successful save, user or lottery not present in storage, lottery
+	 * scenarios: successful creation, user or lottery not present in storage, lottery
 	 * is closed
 	 * 
 	 * @param scenario           - scenario to be tested
@@ -172,8 +172,8 @@ public class BallotControllerTest {
 	 * @throws Throwable - thrown if any exception occurs
 	 */
 	@Test
-	@Parameters(method = "testSaveBallots_Params")
-	public void testSaveBallots(String scenario, int expectedStatusCode) throws Throwable {
+	@Parameters(method = "testCreateBallots_Params")
+	public void testCreateBallots(String scenario, int expectedStatusCode) throws Throwable {
 
 		String requestBody = "{\"lotteryId\": \"123\",\"userId\": \"3\"}";
 		Lottery lottery = null;
@@ -224,14 +224,14 @@ public class BallotControllerTest {
 	}
 
 	/**
-	 * Parameters related to different scenarios for testing saveBallot API
+	 * Parameters related to different scenarios for testing CreateBallot API
 	 * 
 	 * @return scenario parameters
 	 * 
 	 * @throws Throwable - thrown if any exception occurs
 	 */
 	@SuppressWarnings("unused")
-	private static Object[][] testSaveBallots_Params() throws Throwable {
+	private static Object[][] testCreateBallots_Params() throws Throwable {
 
 		return new Object[][] {
 

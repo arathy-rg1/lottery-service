@@ -44,7 +44,7 @@ In total, 4 collections are created in Mongo:
 - seqName
 - seqValue
 
-SEQUENCES collection stores 3 sequence details for user, ballot and lottery and value starts with 1 and is incremented when corresponding object is created.
+SEQUENCES collection stores 3 sequence details for user, ballot and lottery respectively and value starts with 1 and is incremented when corresponding object is created.
 
 ## Testing the service
 Create a database named LOTTERY_DB in Mongo.
